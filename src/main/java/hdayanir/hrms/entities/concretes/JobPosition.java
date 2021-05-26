@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 
 @Data				//	getter setter olusturuyor.
 @Entity 			// 	Entity interface 'ini  implements ediyor.
-@Table(name="jobs") //	veritaninda bir tabloya karsililk geldigini belirtiyoruz.
+@Table(name="job_titles") //	veritaninda bir tabloya karsililk geldigini belirtiyoruz.
 @NoArgsConstructor	//	parametresiz consructor eklemeye yariyor.
 @AllArgsConstructor	//	butun parametrelerin eklendigi  consructor eklemeye yariyor.
 
@@ -26,6 +26,6 @@ public class JobPosition {
 	@Column(name="id")
 	private int id;
 	
-	@Column(name="jobs_name")
-	private String jobs_name;
+	@Column(name="title")
+	private String title;
 }
